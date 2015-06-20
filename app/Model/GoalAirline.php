@@ -61,4 +61,9 @@ class GoalAirline extends AppModel {
 			'order' => ''
 		)
 	);
+	
+	public function metas_aereolineas($airline_id) {
+		return $this->query("SELECT periodo_bsp, fecha_inicio, fecha_fin, meta_bsp, boletos_periodo, total_periodo, faltante, porcentaje, comision, ingreso_comision
+		FROM goal_airlines WHERE airline_id = ? AND boletos_periodo <> 0 ORDER BY fecha_inicio", array($airline_id));
+	}
 }

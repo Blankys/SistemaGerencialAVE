@@ -5,9 +5,9 @@ class DATABASE_CONFIG {
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'localhost',
-		'login' => 'root',
-		'password' => 'root',
-		'database' => 'bd_gerencial_escamilla_final',
+		'login' => 'marlonmm',
+		'password' => '114i2012mm10020',
+		'database' => 'sigave',
 		'prefix' => '',
 		'encoding' => 'utf8'
 	);
